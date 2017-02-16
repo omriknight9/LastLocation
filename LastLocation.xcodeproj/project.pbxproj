@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D365CA21E55B30A00D2D34F /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D365CA11E55B30A00D2D34F /* DataStore.swift */; };
 		6DDB97531E533ED000EC6BDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDB97521E533ED000EC6BDA /* AppDelegate.swift */; };
 		6DDB97551E533ED000EC6BDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDB97541E533ED000EC6BDA /* ViewController.swift */; };
 		6DDB97581E533ED000EC6BDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DDB97561E533ED000EC6BDA /* Main.storyboard */; };
 		6DDB975B1E533ED000EC6BDA /* LastLocation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6DDB97591E533ED000EC6BDA /* LastLocation.xcdatamodeld */; };
 		6DDB975D1E533ED000EC6BDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DDB975C1E533ED000EC6BDA /* Assets.xcassets */; };
 		6DDB97601E533ED000EC6BDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DDB975E1E533ED000EC6BDA /* LaunchScreen.storyboard */; };
+		6DDB97691E53454600EC6BDA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DDB97681E53454600EC6BDA /* MapKit.framework */; };
+		6DDB976B1E53511900EC6BDA /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDB976A1E53511900EC6BDA /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D365CA11E55B30A00D2D34F /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		6DDB974F1E533ED000EC6BDA /* LastLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LastLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DDB97521E533ED000EC6BDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DDB97541E533ED000EC6BDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		6DDB975C1E533ED000EC6BDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DDB975F1E533ED000EC6BDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DDB97611E533ED000EC6BDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DDB97681E53454600EC6BDA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6DDB976A1E53511900EC6BDA /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DDB97691E53454600EC6BDA /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,7 @@
 			children = (
 				6DDB97511E533ED000EC6BDA /* LastLocation */,
 				6DDB97501E533ED000EC6BDA /* Products */,
+				6DDB97671E53454600EC6BDA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +66,8 @@
 			children = (
 				6DDB97521E533ED000EC6BDA /* AppDelegate.swift */,
 				6DDB97541E533ED000EC6BDA /* ViewController.swift */,
+				6DDB976A1E53511900EC6BDA /* DataModel.swift */,
+				6D365CA11E55B30A00D2D34F /* DataStore.swift */,
 				6DDB97561E533ED000EC6BDA /* Main.storyboard */,
 				6DDB975C1E533ED000EC6BDA /* Assets.xcassets */,
 				6DDB975E1E533ED000EC6BDA /* LaunchScreen.storyboard */,
@@ -65,6 +75,14 @@
 				6DDB97591E533ED000EC6BDA /* LastLocation.xcdatamodeld */,
 			);
 			path = LastLocation;
+			sourceTree = "<group>";
+		};
+		6DDB97671E53454600EC6BDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DDB97681E53454600EC6BDA /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +158,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DDB975B1E533ED000EC6BDA /* LastLocation.xcdatamodeld in Sources */,
+				6DDB976B1E53511900EC6BDA /* DataModel.swift in Sources */,
 				6DDB97551E533ED000EC6BDA /* ViewController.swift in Sources */,
+				6D365CA21E55B30A00D2D34F /* DataStore.swift in Sources */,
 				6DDB97531E533ED000EC6BDA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +321,7 @@
 				6DDB97661E533ED000EC6BDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

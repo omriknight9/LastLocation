@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  LastLocation
-//
-//  Created by HackerU on 14/02/2017.
-//  Copyright © 2017 HackerU. All rights reserved.
-//
 
 import UIKit
 import CoreData
